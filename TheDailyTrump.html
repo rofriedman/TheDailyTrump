@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>The Daily Trump</title>
+  <link rel="stylesheet" type="text/css" href="TheDailyTrump.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    $("h4").hover(function(){
+      $(this).css("background-color", "AquaMarine");
+      }, function(){
+      $(this).css("background-color", "transparent");
+    });
+  });
+  </script>
+
+<style>
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #3e8e41;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.show {display:block;}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+  <div ID="container">
+
+  <div ID="header">
+    <h1 style="text-align:center;">THE DAILY TRUMP</h1>
+
+    <table style="width:100%">
+      <tr>
+        <td><p>Time:</p>
+
+        <p id="demo"></p>
+
+        <script>
+        var myVar = setInterval(myTimer, 1000);
+
+        function myTimer() {
+          var d = new Date();
+          document.getElementById("demo").innerHTML = d.toLocaleTimeString();
+        }
+        </script></td>
+        <td><p>Date:</p>
+
+        <p id="Demo"></p>
+
+        <script>
+        var d = new Date();
+        document.getElementById("Demo").innerHTML = d.toDateString();
+
+        </script></td>
+      </tr>
+    </table>
+
+  </div>
+
+  <div ID="navigation">
+    <button id="myBtn" class="dropbtn">Menu</button>
+    <div id="myDropdown" class="dropdown-content">
+      <il><a href= TheDailyTrump.html>Home</a></il> <br> <br>
+      <il><a href= AboutUs.html>About Us</a></il> <br> <br>
+      <il><a href= Articles.html>Articles</a></il>
+    </div>
+  </div>
+
+  <script>
+  document.getElementById("myBtn").onclick = function() {myFunction()};
+
+  function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+  </script>
+
+
+  <div ID="content">
+      <center>
+    <img src="Trump.jpg" width="662px" height="385px" alt="THE DAILY TRUMP">​
+      </center>
+      <h3 style="text-align:center;">It Is Our Mission To FACT CHECK 45</h4>
+      <br>
+      <br>
+      <br>
+      <br>
+      <h1>Articles:</h1>
+      <br>
+        <h4><a href= TrumpsFalseStatements.html style="color:black">Trump’s False Statements About How <br> Democratic Leaders Handled Protests</a></h4>
+      <a href= TrumpsFalseStatements.html>
+         <img alt="Trump’s False Statements About How Democratic Leaders Handled Protests" onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0"
+         src="TrumpBible.jpg"
+         width="612" height="335" </img>
+      <br>
+      <br>
+      <br>
+        <h4><a href= TrumpMisleads.html style="color:black">Trump Misleads on <br> Hydroxychloroquine, Again</a></h4>
+      <a href= TrumpMisleads.html>
+       <img alt="Trump Misleads on Hydroxychloroquine, Again" onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0"
+       src="TrumpHydro.jpg"
+       width="612" height="335" </img></a>
+
+  </div>
+
+  <script>
+  function bigImg(x) {
+    x.style.height = "475px";
+    x.style.width = "752px";
+  }
+
+  function normalImg(x) {
+    x.style.height = "335px";
+    x.style.width = "612px";
+  }
+  </script>
+
+  <div ID="background">
+    </div>
+<br><br><br><br><br><br>
+  </div>
+
+
+
+</body>
+
+</html>

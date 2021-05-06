@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>About Us</title>
+  <link rel="stylesheet" type="text/css" href="TheDailyTrump.css">
+  <style>
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #3e8e41;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.show {display:block;}
+</style>
+</head>
+
+<body>
+  <div ID="container">
+
+  <div ID="header">
+    <h1>Trump’s False Statements About How Democratic Leaders Handled Protests</h1>
+  </div>
+
+  <div ID="navigation">
+    <button id="myBtn" class="dropbtn">Menu</button>
+    <div id="myDropdown" class="dropdown-content">
+      <il><a href= TheDailyTrump.html>Home</a></il> <br> <br>
+      <il><a href= AboutUs.html>About Us</a></il> <br> <br>
+      <il><a href= Articles.html>Articles</a></il>
+    </div>
+  </div>
+
+  <script>
+  document.getElementById("myBtn").onclick = function() {myFunction()};
+
+  function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+  </script>
+
+  <div ID="content">
+    <br>
+          <img src="TrumpBible.jpg"
+          width="612" height="335" </img>
+    <br><br>
+    <p>President Donald Trump has made false statements and implications about
+      how three Democratic officials responded to violent protests that followed
+      George Floyd’s death in police custody in Minneapolis:</p>
+      <ul>
+        <li>Trump said the mayor of Washington, D.C.,
+          “wouldn’t let the D.C. Police get involved” during a turbulent protest
+          outside the White House.
+          The Secret Service said the local police were involved.</li><br><br>
+          <li>Trump urged Philadelphia officials to call in the National Guard to
+            help stop looting — hours after they had already done so.</li><br><br>
+            <li>Trump said Minneapolis had been too slow to bring in the National
+              Guard, and again got the timeline wrong.</p></li><br><br>
+      </ul>
+
+    <p>The inaccuracies come as the president has scolded state and local officials,
+      often singling out Democrats, for not being tough enough in dealing
+      with protests. In a conference call June 1, Trump told the nation’s governors
+      they were “weak” and said they needed to act more aggressively in quelling
+      violent behavior.</p>
+  ​  <p>For The Full Article:
+    <a href= https://www.factcheck.org/2020/06/trumps-false-statements-about-how-democratic-leaders-handled-protests/>CLICK HERE</a>
+
+  </div>
+
+  <div ID="background">
+    </div>
+<br><br><br><br><br><br>
+  </div>
+</body>
+
+</html>
